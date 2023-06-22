@@ -20,8 +20,8 @@ services:
     image: deneme:latest
     # restart: always     # Bu özellik swarm da deseklenmiyor
     deploy:        
-      # mode: global    
-      replicas: 5
+      mode: global    
+      # replicas: 5
     depends_on: 
       - database
     ports:
